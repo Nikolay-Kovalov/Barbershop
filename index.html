@@ -11,11 +11,40 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles/style.css" />
   </head>
   <body>
     <header></header>
     <main>
+      <div class="backdrop hidden">
+        <div class="modal hidden">
+          <div class="close_btn"><span>&#215;</span></div>
+          <h2 class="modal_title">Онлайн запис</h2>
+          <form action="submit" class="online_form_modal">
+            <input type="text" class="input_modal" placeholder="Ваше ім’я" />
+            <input type="text" class="input_modal" placeholder="Телефон" />
+            <select class="select_specialist_modal">
+              <option value="">Володимир (топ-барбер)</option>
+              <option value="">Сергій (топ-барбер)</option>
+              <option value="">Антон (стажер)</option>
+            </select>
+            <input
+              type="datetime-local"
+              class="input_modal last_input_modal"
+              placeholder="Оберіть дату"
+            />
+            <button class="online_button_modal">Підтвердити</button>
+          </form>
+        </div>
+      </div>
+
       <section class="hero_section">
         <div class="container">
           <div class="hero_section_wrapper">
@@ -219,11 +248,24 @@
               <input type="text" class="input" placeholder="Ваше ім’я" />
               <input type="text" class="input" placeholder="Телефон" />
               <select class="select_specialist">
-                <option value="">Володимир (топ-барбер)</option>
-                <option value="">Сергій (топ-барбер)</option>
-                <option value="">Антон (стажер)</option>
+                <div class="opt_wrapper">
+                  <option class="option" value="">
+                    Володимир (топ-барбер)
+                  </option>
+                </div>
+
+                <option class="option" value="">Сергій (топ-барбер)</option>
+                <option class="option" value="">Антон (стажер)</option>
+
+                <!-- <option class="option" value="">Володимир (топ-барбер)</option>
+                <option class="option" value="">Сергій (топ-барбер)</option>
+                <option class="option" value="">Антон (стажер)</option> -->
               </select>
-              <input type="text" class="input" placeholder="Оберіть дату" />
+              <input
+                type="datetime-local"
+                class="input"
+                placeholder="Оберіть дату"
+              />
               <button class="online_button">Підтвердити</button>
             </form>
             <img
@@ -239,38 +281,94 @@
       <section class="portfolio_section" id="portfolio">
         <div class="container">
           <h2 class="portfolio_title">Портфоліо</h2>
-          <ul class="portfolio_list">
-            <li class="portfolio_item">
-              <img
-                src="./images/portfolio_1.jpg"
-                alt=""
-                class="portfolio_img"
-                width="386"
-                height="544"
-              />
-            </li>
-            <li class="portfolio_item">
-              <img
-                src="./images/portfolio_2.jpg"
-                alt=""
-                class="portfolio_img"
-                width="386"
-                height="544"
-              />
-            </li>
-            <li class="portfolio_item">
-              <img
-                src="./images/portfolio_3.jpg"
-                alt=""
-                class="portfolio_img"
-                width="386"
-                height="544"
-              />
-            </li>
-          </ul>
+          <div class="slide_container">
+            <ul class="line_sl">
+              <li class="portfolio_item">
+                <img
+                  src="./images/portfolio_1.jpg"
+                  alt=""
+                  class="item"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="./images/portfolio_2.jpg"
+                  alt=""
+                  class="portfolio_img"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="./images/portfolio_3.jpg"
+                  alt=""
+                  class="portfolio_img"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="portfolio_item">
+                <img
+                  src="./images/portfolio_4.jpg"
+                  alt=""
+                  class="item"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="./images/portfolio_5.jpg"
+                  alt=""
+                  class="portfolio_img"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="./images/portfolio_6.jpg"
+                  alt=""
+                  class="portfolio_img"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="portfolio_item">
+                <img
+                  src="./images/portfolio_7.jpg"
+                  alt=""
+                  class="item"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="./images/portfolio_8.jpg"
+                  alt=""
+                  class="portfolio_img"
+                  width="386"
+                  height="544"
+                />
+              </li>
+              <li class="item">
+                <img
+                  src="./images/portfolio_9.jpg"
+                  alt=""
+                  class="portfolio_img"
+                  width="386"
+                  height="544"
+                />
+              </li>
+            </ul>
+          </div>
           <div class="portfolio_btn_wrapper">
-            <button class="portfolio_btn">&#8592;</button
-            ><button class="portfolio_btn">&#8594;</button>
+            <button class="portfolio_btn_prev" disabled="true">&#8592;</button
+            ><button class="portfolio_btn_next">&#8594;</button>
           </div>
         </div>
       </section>
@@ -298,7 +396,7 @@
         </div>
       </section>
       <section class="map_section" id="map">
-        <div class="containeR">
+        <div class="container">
           <h2 class="map_title">Де ми знаходимось</h2>
           <div class="map_wrapper">
             <iframe
@@ -326,7 +424,7 @@
                   <li class="address_item">
                     <a
                       target="_blank"
-                      rel="noopener nofollow norefferef"
+                      rel="noopener nofollow noreferref"
                       href="https://maps.app.goo.gl/x5DccXhb5WEYV7WZ9"
                       class="address_item_link"
                       >м. Київ, вул. Мечнікова, 16</a
@@ -350,16 +448,56 @@
             <h2 class="footer_social_title">Ми у соц. мережах:</h2>
             <ul class="footer_social_list">
               <li class="footer_social_list_item">
-                <a href="" class="footer_social_list_link"></a>
+                <a
+                  href="https://www.facebook.com"
+                  class="footer_social_list_link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  aria-label="facebook icon"
+                >
+                  <svg class="icon">
+                    <use href="./images/icons.svg#icon-Facebook"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer_social_list_item">
-                <a href="" class="footer_social_list_link"></a>
+                <a
+                  href="https://twitter.com"
+                  class="footer_social_list_link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  aria-label="twitter icon"
+                >
+                  <svg class="icon twit">
+                    <use href="./images/icons.svg#icon-Twitter"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer_social_list_item">
-                <a href="" class="footer_social_list_link"></a>
+                <a
+                  href="https://www.instagram.com"
+                  class="footer_social_list_link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  aria-label="instagram icon"
+                >
+                  <svg class="icon inst">
+                    <use href="./images/icons.svg#icon-Instagram"></use>
+                  </svg>
+                </a>
               </li>
               <li class="footer_social_list_item">
-                <a href="" class="footer_social_list_link"></a>
+                <a
+                  href="https://www.linkedin.com"
+                  class="footer_social_list_link"
+                  target="_blank"
+                  rel="noopener nofollow noreferrer"
+                  aria-label="linkedin icon"
+                >
+                  <svg class="icon linked">
+                    <use href="./images/icons.svg#icon-Linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
           </div>
@@ -417,6 +555,26 @@
         </div>
       </div>
     </footer>
+    <!-- <div class="test">
+      <div class="slide_container">
+        <div class="line_sl">
+          <img src="./images/portfolio_1.jpg" alt="" class="item" />
+          <img src="./images/portfolio_2.jpg" alt="" class="item" />
+          <img src="./images/portfolio_3.jpg" alt="" class="item" />
+          <img src="./images/portfolio_1.jpg" alt="" class="item" />
+          <img src="./images/portfolio_2.jpg" alt="" class="item" />
+          <img src="./images/portfolio_3.jpg" alt="" class="item" />
+          <img src="./images/portfolio_1.jpg" alt="" class="item" />
+          <img src="./images/portfolio_2.jpg" alt="" class="item" />
+          <img src="./images/portfolio_3.jpg" alt="" class="item" />
+        </div>
+      </div>
+      <div class="wrapper">
+        <button class="btn_prev button" disabled>Prev</button>
+        <button class="btn_next button">Next</button>
+      </div>
+    </div> -->
+
     <script src="https://unpkg.com/vanilla-back-to-top@7.2.1/dist/vanilla-back-to-top.min.js"></script>
     <script>
       addBackToTop({
@@ -425,5 +583,6 @@
         textColor: "#fff",
       });
     </script>
+    <script src="./index.js" type="module"></script>
   </body>
 </html>
