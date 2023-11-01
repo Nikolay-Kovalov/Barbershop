@@ -734,6 +734,36 @@ body {
         gap: 192px; */
     }
 
+
+    .navigation_list_footer {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        margin-bottom: 24px;
+
+
+    }
+
+    .navigation_list_item_footer {
+        margin-bottom: 20px;
+    }
+
+    .navigation_item_link_footer {
+        text-decoration: none;
+        color: rgba(251, 251, 251, 0.6);
+        font-size: 22px;
+        transition: color 200ms linear;
+
+    }
+
+    .navigation_item_link_footer:hover {
+        cursor: pointer;
+        text-decoration: underline;
+        color: rgba(251, 251, 251, 0.9);
+    }
+
     .footer_social_title {
         text-align: center;
         font-size: 32px;
@@ -781,7 +811,7 @@ body {
     }
 
     .footer_nav {
-        margin-top: 72px;
+        margin-top: 32px;
     }
 
     .promotion_footer {
@@ -797,7 +827,10 @@ body {
     }
 
     .footer_input {
-        width: 358px;
+        /* display: block; */
+        min-width: 300px;
+
+        max-width: 358px;
         height: 50px;
         padding-left: 16px;
         font-size: 24px;
