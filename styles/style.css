@@ -467,8 +467,8 @@ body {
     }
 
     .select_specialist {
-        /* width: 508px;
-        height: 64px; */
+        width: 330px;
+        height: 48px;
         font-size: 24px;
         margin-bottom: 32px;
         color: #3C3A3A;
