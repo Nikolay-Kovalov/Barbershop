@@ -378,7 +378,7 @@ body {
 
     .advantages_list {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
         margin: 0 auto;
         text-align: center;
         /* gap: 16px; */
@@ -638,15 +638,15 @@ body {
         background-image: linear-gradient(to right, rgba(45, 55, 64, 0.8), rgba(45, 55, 64, 0.8)), url('../images/contacts_bg.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 32px;
+        padding-bottom: 22px;
     }
 
     .map_title {
         text-align: center;
-        font-size: 36px;
+        font-size: 32px;
         font-weight: 400;
-        margin-bottom: 48px;
+        margin-bottom: 16px;
         color: rgba(251, 251, 251, 0.9);
     }
 
@@ -665,28 +665,47 @@ body {
         background-image: linear-gradient(to right, rgba(45, 55, 64, 0.8), rgba(45, 55, 64, 0.8)), url('../images/footer_back.jpg');
         background-size: cover;
         background-repeat: no-repeat;
-        padding-top: 72px;
-        padding-bottom: 72px;
+        padding-top: 32px;
+        padding-bottom: 32px;
 
     }
 
+    .footer_contacts_wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+
     .logo {
-        font-size: 92px;
+
+        font-size: 72px;
         color: rgba(251, 251, 251, 0.9);
-        ;
         font-weight: 400;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
         text-decoration: none;
     }
 
     .address_wrapper {
-        margin-top: 56px;
+
+
+        margin-top: 32px;
+    }
+
+    .address {
+        text-align: center;
     }
 
     .address_title {
-        font-size: 36px;
+        text-align: center;
+        font-size: 32px;
+
         font-weight: 400;
         color: rgba(251, 251, 251, 0.9);
-        margin-bottom: 40px;
+        margin-bottom: 20px;
     }
 
     .address_item_link {
@@ -703,7 +722,7 @@ body {
     }
 
     .address_item {
-        /* margin-bottom: 20px; */
+        margin-bottom: 12px;
     }
 
     .address_item:last-child {
@@ -716,16 +735,18 @@ body {
     }
 
     .footer_social_title {
-        font-size: 36px;
+        text-align: center;
+        font-size: 32px;
         font-weight: 400;
         color: rgba(251, 251, 251, 0.9);
-        margin-top: 72px;
-        margin-bottom: 16px;
+        margin-top: 24px;
+        margin-bottom: 24px;
     }
 
     .footer_social_list {
         display: flex;
         gap: 20px;
+        margin-bottom: 24px;
     }
 
     .footer_social_list_item {
@@ -746,9 +767,9 @@ body {
 
 
     .footer_social_list_link {
-        /* display: flex;
+        display: flex;
         justify-content: center;
-        align-items: center; */
+        align-items: center;
         width: 100%;
         height: 100%;
     }
@@ -765,23 +786,31 @@ body {
 
     .promotion_footer {
         /* margin-top: 56px; */
-        /* margin-bottom: 16px; */
-        font-size: 36px;
+        margin-bottom: 24px;
+        width: 208px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 32px;
         font-weight: 400;
         color: rgba(251, 251, 251, 0.9);
+        margin-bottom: 24px;
     }
 
     .footer_input {
         width: 358px;
         height: 50px;
-        padding-left: 24px;
-        font-size: 28px;
+        padding-left: 16px;
+        font-size: 24px;
+        margin-bottom: 32px;
     }
 
     .footer_btn {
-        /* width: 200px;
-        height: 70px;
-        margin-left: 28px; */
+        display: block;
+        width: 200px;
+        height: 50px;
+        /* margin-left: 28px; */
+        margin-left: auto;
+        margin-right: auto;
         padding: 0;
         font-size: 24px;
         color: rgba(251, 251, 251, 0.9);
@@ -806,18 +835,19 @@ body {
     }
 
     .icon.twit {
-        /* width: 47px;
-        height: 38px; */
+        width: 47px;
+        height: 38px;
     }
 
-    /* .icon.inst {
+    .icon.inst {
         width: 46px;
-        height: 46px; */
+        height: 46px;
+    }
 
 
     .icon.linked {
-        /* width: 42px;
-        height: 42px; */
+        width: 42px;
+        height: 42px;
     }
 
     .footer_social_list_item:hover .icon {
