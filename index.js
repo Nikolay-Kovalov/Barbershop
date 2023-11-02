@@ -6,8 +6,10 @@ const modalCloseBtn = document.querySelector(".close_btn");
 const prevButton = document.querySelector(".portfolio_btn_prev");
 const nextButton = document.querySelector(".portfolio_btn_next");
 const slideRow = document.querySelector(".line_sl");
-const option = document.querySelector(".select_specialist")
-console.log(option)
+const option = document.querySelector(".select_specialist");
+
+
+
 
 
 
@@ -15,6 +17,7 @@ console.log(option)
 
 heroBtn.addEventListener('click', onHeroBtnClick);
 backdrop.addEventListener('click', onBackdropClick);
+
 modalForm.addEventListener('submit', onModalFormSubmit);
 document.addEventListener('keydown', onEscClick);
 modalCloseBtn.addEventListener('click', onCloseBtnClick);
@@ -24,18 +27,19 @@ option.addEventListener('mouseover', onMouseoverOption)
 
 
 
+
 function onHeroBtnClick () {
-    backdrop.classList.toggle("hidden")
-    modal.classList.toggle("hidden")
-    document.body.classList.toggle("backdrop_active")
+    backdrop.classList.remove("hidden")
+    modal.classList.remove("hidden")
+    document.body.classList.add("backdrop_active")
 
 }
 
 function onBackdropClick(evt) {
     if (evt.target === evt.currentTarget) {
-        backdrop.classList.toggle('hidden');
-        modal.classList.toggle('hidden');
-        document.body.classList.toggle('backdrop_active')
+        backdrop.classList.add('hidden');
+        modal.classList.add('hidden');
+        document.body.classList.remove('backdrop_active')
     }
 }
 
@@ -45,17 +49,18 @@ function onModalFormSubmit(evt) {
 
 function onEscClick(evt) {
     if (evt.code === "Escape") {
-         backdrop.classList.toggle('hidden');
-        modal.classList.toggle('hidden');
-        document.body.classList.toggle('backdrop_active')
+         backdrop.classList.add('hidden');
+        modal.classList.add('hidden');
+        document.body.classList.add('backdrop_active')
     }
 }
 
 function onCloseBtnClick() {
-     backdrop.classList.toggle('hidden');
-        modal.classList.toggle('hidden');
-        document.body.classList.toggle('backdrop_active') 
+     backdrop.classList.add('hidden');
+        modal.classList.add('hidden');
+        document.body.classList.remove('backdrop_active') 
 }
+
 
 
 

@@ -39,6 +39,48 @@ body {
     padding-right: 16px;
 }
 
+.mob-menu-btn {
+    position: absolute;
+    top: 28px;
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+
+}
+
+.mob-menu-btn {
+    cursor: pointer;
+}
+
+.mobile_menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 313px;
+    height: 458px;
+    padding: 48px 40px;
+    background-color: #141E26;
+    z-index: 1;
+}
+
+.icon-mobile-cross {
+    position: absolute;
+    top: 18px;
+    right: 12px;
+    width: 20px;
+    height: 20px;
+}
+
+.icon-menu {
+    width: 24px;
+    height: 16px;
+}
+
+.navigation-mob li:not(:last-child) {
+    margin-bottom: 32px;
+}
+
 .backdrop {
     display: flex;
     width: 100%;
@@ -53,10 +95,10 @@ body {
     background-color: rgba(49, 49, 49, 0.8);
     opacity: 1;
     transition: opacity 250ms linear, visibility 250ms linear;
-
-
-
 }
+
+
+
 
 .modal {
     display: block;
@@ -80,6 +122,12 @@ body {
     pointer-events: none;
 }
 
+.hidden-mob {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
 .backdrop.hidden .modal {
     opacity: 0;
     transform: scale(0.3) rotate(360deg)
@@ -87,6 +135,11 @@ body {
 
 
 .backdrop_active {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.backdrop_active_mob {
     height: 100vh;
     overflow: hidden;
 }
@@ -206,6 +259,7 @@ body {
 
 
 .hero_section {
+    /* position: relative; */
     padding-top: 121px;
     background-image: url('../images/hero_image.jpg');
     background-size: cover;
@@ -239,6 +293,7 @@ body {
     font-size: 18px;
     border: none;
     border-radius: 8px;
+
     transition: background-color 200ms linear;
 }
 
@@ -251,9 +306,6 @@ body {
 
 }
 
-.navigation_list_item {
-    margin-bottom: 20px;
-}
 
 .navigation_item_link {
     text-decoration: none;
@@ -1933,7 +1985,15 @@ body {
     }
 }
 
-@media screen and (min-width: 768px) {}
+@media screen and (min-width: 768px) {
+    .mob-menu-btn {
+        display: none;
+    }
+
+    .hero_section {
+        position: static;
+    }
+}
 
 @media screen and (min-width: 1230px) {
     .container {

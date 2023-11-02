@@ -24,7 +24,7 @@
     <header></header>
     <main>
       <div class="backdrop hidden">
-        <div class="modal hidden">
+        <div class="modal">
           <div class="close_btn"><span>&#215;</span></div>
           <h2 class="modal_title">Онлайн запис</h2>
           <form action="submit" class="online_form_modal">
@@ -45,8 +45,46 @@
         </div>
       </div>
 
+      <div class="mobile_menu hidden-mob">
+        <svg class="icon-mobile-cross">
+          <use href="./images/icons.svg#icon-cross-mob"></use>
+        </svg>
+        <nav class="navigation-mob">
+          <ul class="navigation_list">
+            <li class="navigation_list_item navigation_list_item_mob">
+              <a href="#about" class="navigation_item_link">Про нас</a>
+            </li>
+            <li class="navigation_list_item">
+              <a href="#price" class="navigation_item_link">Послуги та ціни</a>
+            </li>
+            <li class="navigation_list_item">
+              <a href="#advantages" class="navigation_item_link"
+                >Наші переваги</a
+              >
+            </li>
+            <li class="navigation_list_item">
+              <a href="#online" class="navigation_item_link">Онлайн запис</a>
+            </li>
+            <li class="navigation_list_item">
+              <a href="#portfolio" class="navigation_item_link">Портфоліо</a>
+            </li>
+            <li class="navigation_list_item">
+              <a href="#feedback" class="navigation_item_link">Відгуки </a>
+            </li>
+            <li class="navigation_list_item">
+              <a href="#map" class="navigation_item_link">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
       <section class="hero_section">
         <div class="container">
+          <button type="button" class="mob-menu-btn">
+            <svg class="icon-menu">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
           <div class="hero_section_wrapper">
             <div class="hero_title_wrapper">
               <h1 class="hero_title">
@@ -559,5 +597,6 @@
       });
     </script>
     <script src="./index.js" type="module"></script>
+    <script src="./mob-menu.js" type="module"></script>
   </body>
 </html>
