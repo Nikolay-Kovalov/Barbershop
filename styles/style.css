@@ -420,8 +420,29 @@ body {
 }
 
 .price_list_item {
+    display: flex;
     margin-bottom: 16px;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
+.price_list_item::after {
+    content: "";
+    height: 1px;
+    flex-grow: 1;
+    border-bottom: 2px dotted white;
+    margin-left: 4px;
+    margin-right: 4px;
+
+}
+
+.price_elem:last-child {
+    order: 2;
+}
+
+
+
+
 
 .price_list_item:last-child {
     margin-bottom: 0;
@@ -507,7 +528,7 @@ body {
 
 .input {
     font-size: 24px;
-    width: 330px;
+    max-width: 100%;
     height: 48px;
     margin-bottom: 32px;
     padding-left: 16px;
@@ -528,18 +549,24 @@ body {
 
 .input::placeholder {
     font-family: Inter;
-    font-size: 28px;
+    font-size: 24px;
     color: rgba(45, 55, 64, 0.5);
 }
 
 .select_specialist {
-    width: 330px;
+    max-width: 100%;
     height: 48px;
     font-size: 24px;
     margin-bottom: 32px;
     color: #3C3A3A;
     -webkit-appearance: none;
-    padding-left: 24px;
+    padding-left: 16px;
+    border-radius: 0;
+}
+
+.time {
+    -webkit-appearance: none;
+    width: 340px;
 }
 
 .onlone_image {
@@ -1228,9 +1255,9 @@ body {
         padding-top: 121px;
         background-image: url('../images/hero_image.jpg');
         background-size: cover;
-        background-position: top 0px right -280px;
+        background-position: top 0px right -340px;
         background-repeat: no-repeat;
-        height: 540px;
+        height: 640px;
         /* display: flex; */
     }
 
@@ -2186,6 +2213,7 @@ body {
 
 
     .hero_section {
+        padding-top: 0;
         background-image: url('../images/hero_image.jpg');
         background-size: cover;
         background-position: 0;
@@ -2244,6 +2272,7 @@ body {
     }
 
     .navigation {
+        display: block;
         margin-top: 100px;
     }
 
