@@ -279,9 +279,9 @@ body {
     padding-top: 121px;
     background-image: url('../images/hero_image.jpg');
     background-size: cover;
-    background-position: top 0px right -280px;
+    background-position: top 0px right -340px;
     background-repeat: no-repeat;
-    height: 540px;
+    height: 640px;
     /* display: flex; */
 }
 
