@@ -630,6 +630,7 @@ body {
 }
 
 .portfolio_btn {
+
     border: none;
     width: 60px;
     height: 60px;
@@ -654,6 +655,9 @@ body {
 
 .portfolio_btn_prev,
 .portfolio_btn_next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: none;
     width: 60px;
     height: 60px;
