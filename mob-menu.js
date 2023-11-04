@@ -33,4 +33,3 @@ function onMobItemClick(evt) {
 
 }
 
-console.dir(window)
