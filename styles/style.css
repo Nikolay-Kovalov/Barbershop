@@ -670,8 +670,8 @@ body {
 
 }
 
-.portfolio_btn_prev:hover,
-.portfolio_btn_next:hover {
+.portfolio_btn_prev:active,
+.portfolio_btn_next:active {
     cursor: pointer;
     background-color: #5E0011;
     border: 1px solid rgba(251, 251, 251, 0.9);
