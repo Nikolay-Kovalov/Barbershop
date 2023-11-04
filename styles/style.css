@@ -659,6 +659,7 @@ body {
     justify-content: center;
     align-items: center;
     border: none;
+    padding: 0;
     width: 60px;
     height: 60px;
     background-color: #8C031C;
@@ -697,7 +698,7 @@ body {
 }
 
 .portfolio_btn_wrapper {
-    width: 190px;
+    max-width: 190px;
     margin-top: 32px;
     display: flex;
     gap: 70px;
