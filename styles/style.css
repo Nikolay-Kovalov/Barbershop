@@ -702,6 +702,7 @@ body {
     margin-top: 32px;
     display: flex;
     gap: 70px;
+
     margin-left: auto;
     margin-right: auto;
 
@@ -893,14 +894,15 @@ body {
 
 .footer_social_list {
     display: flex;
+    justify-content: center;
     gap: 20px;
     margin-bottom: 24px;
 }
 
 .footer_social_list_item {
     text-decoration: none;
-    width: 70px;
-    height: 70px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     background-color: rgba(251, 251, 251, 0.9);
     transition: background-color 200ms linear, fill 800ms linear;
@@ -930,6 +932,10 @@ body {
 
 .footer_nav {
     margin-top: 32px;
+}
+
+.footer_nav_form_wrapper {
+    text-align: center;
 }
 
 .promotion_footer {
@@ -979,26 +985,26 @@ body {
 
 .icon {
     fill: rgba(20, 30, 38, 0.8);
-    width: 25px;
-    height: 50px;
+    width: 18px;
+    height: 36px;
     transition: fill 800ms linear;
 
 }
 
 .icon.twit {
-    width: 47px;
-    height: 38px;
+    width: 34px;
+    height: 26px;
 }
 
 .icon.inst {
-    width: 46px;
-    height: 46px;
+    width: 33px;
+    height: 32px;
 }
 
 
 .icon.linked {
-    width: 42px;
-    height: 42px;
+    width: 30px;
+    height: 28px;
 }
 
 .footer_social_list_item:hover .icon {
@@ -2789,6 +2795,10 @@ body {
 
         font-size: 24px;
         color: rgba(251, 251, 251, 0.6);
+    }
+
+    .footer_nav_form_wrapper {
+        text-align: left;
     }
 
     .footer_nav {
