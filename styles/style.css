@@ -231,7 +231,7 @@ body {
     transition: background-color 200ms linear;
 }
 
-.online_button_modal:hover {
+.online_button_modal:active {
     cursor: pointer;
     background-color: #5E0011;
 }
@@ -262,7 +262,7 @@ body {
 
 }
 
-.close_btn:hover {
+.close_btn:active {
     cursor: pointer;
 }
 
@@ -339,7 +339,7 @@ body {
 
 }
 
-.navigation_item_link:hover {
+.navigation_item_link:active {
     cursor: pointer;
     text-decoration: underline;
     color: rgba(251, 251, 251, 0.9);
@@ -351,7 +351,7 @@ body {
 
 
 
-.hero_btn:hover {
+.hero_btn:active {
     cursor: pointer;
     background-color: #5E0011;
 }
@@ -677,20 +677,20 @@ body {
     border: 1px solid rgba(251, 251, 251, 0.9);
 }
 
-.portfolio_btn_prev:hover.portfolio_btn_prev[disabled],
-.portfolio_btn_next:hover.portfolio_btn_next[disabled] {
+.portfolio_btn_prev:active.portfolio_btn_prev[disabled],
+.portfolio_btn_next:active.portfolio_btn_next[disabled] {
     border: none;
     cursor: auto;
 
 }
 
 
-.online_button:hover {
+.online_button:active {
     cursor: pointer;
     background-color: #5E0011;
 }
 
-.portfolio_btn:hover {
+.portfolio_btn:active {
     cursor: pointer;
     background-color: #5E0011;
     border: 1px solid rgba(251, 251, 251, 0.9);
@@ -836,7 +836,7 @@ body {
     transition: color 200ms linear;
 }
 
-.address_item_link:hover {
+.address_item_link:active {
     color: rgba(251, 251, 251, 0.9);
 }
 
@@ -877,7 +877,7 @@ body {
 
 }
 
-.navigation_item_link_footer:hover {
+.navigation_item_link_footer:active {
     cursor: pointer;
     text-decoration: underline;
     color: rgba(251, 251, 251, 0.9);
@@ -910,7 +910,7 @@ body {
 
 }
 
-.footer_social_list_item:hover {
+.footer_social_list_item:active {
     background-color: #5E0011;
 }
 
@@ -978,7 +978,7 @@ body {
 
 }
 
-.footer_btn:hover {
+.footer_btn:active {
     background-color: #5E0011;
     cursor: pointer;
 }
@@ -1007,7 +1007,7 @@ body {
     height: 28px;
 }
 
-.footer_social_list_item:hover .icon {
+.footer_social_list_item:active .icon {
     fill: rgba(251, 251, 251, 0.9);
 }
 
@@ -1054,8 +1054,8 @@ body {
     transition: transform 500ms linear;
 }
 
-.item:hover,
-.portfolio_img:hover {
+.item:active,
+.portfolio_img:active {
     transform: scale(1.02);
     cursor: pointer;
 
@@ -1091,7 +1091,7 @@ body {
     padding: 8px 16px 8px;
 }
 
-.button:hover {
+.button:active {
     cursor: pointer;
 }
 
@@ -1219,7 +1219,7 @@ body {
         transition: background-color 200ms linear;
     }
 
-    .online_button_modal:hover {
+    .online_button_modal:active {
         cursor: pointer;
         background-color: #5E0011;
     }
@@ -1250,7 +1250,7 @@ body {
 
     }
 
-    .close_btn:hover {
+    .close_btn:active {
         cursor: pointer;
     }
 
@@ -1328,7 +1328,7 @@ body {
 
     }
 
-    .navigation_item_link:hover {
+    .navigation_item_link:active {
         cursor: pointer;
         text-decoration: underline;
         color: rgba(251, 251, 251, 0.9);
@@ -1340,7 +1340,7 @@ body {
 
 
 
-    .hero_btn:hover {
+    .hero_btn:active {
         cursor: pointer;
         background-color: #5E0011;
     }
@@ -1625,27 +1625,27 @@ body {
 
     }
 
-    .portfolio_btn_prev:hover,
-    .portfolio_btn_next:hover {
+    .portfolio_btn_prev:active,
+    .portfolio_btn_next:active {
         cursor: pointer;
         background-color: #5E0011;
         border: 1px solid rgba(251, 251, 251, 0.9);
     }
 
-    .portfolio_btn_prev:hover.portfolio_btn_prev[disabled],
-    .portfolio_btn_next:hover.portfolio_btn_next[disabled] {
+    .portfolio_btn_prev:active.portfolio_btn_prev[disabled],
+    .portfolio_btn_next:active.portfolio_btn_next[disabled] {
         border: none;
         cursor: auto;
 
     }
 
 
-    .online_button:hover {
+    .online_button:active {
         cursor: pointer;
         background-color: #5E0011;
     }
 
-    .portfolio_btn:hover {
+    .portfolio_btn:active {
         cursor: pointer;
         background-color: #5E0011;
         border: 1px solid rgba(251, 251, 251, 0.9);
@@ -1790,7 +1790,7 @@ body {
         transition: color 200ms linear;
     }
 
-    .address_item_link:hover {
+    .address_item_link:active {
         color: rgba(251, 251, 251, 0.9);
     }
 
@@ -1831,7 +1831,7 @@ body {
 
     }
 
-    .navigation_item_link_footer:hover {
+    .navigation_item_link_footer:active {
         cursor: pointer;
         text-decoration: underline;
         color: rgba(251, 251, 251, 0.9);
@@ -1863,7 +1863,7 @@ body {
 
     }
 
-    .footer_social_list_item:hover {
+    .footer_social_list_item:active {
         background-color: #5E0011;
     }
 
@@ -1928,7 +1928,7 @@ body {
 
     }
 
-    .footer_btn:hover {
+    .footer_btn:active {
         background-color: #5E0011;
         cursor: pointer;
     }
@@ -1957,7 +1957,7 @@ body {
         height: 42px;
     }
 
-    .footer_social_list_item:hover .icon {
+    .footer_social_list_item:active .icon {
         fill: rgba(251, 251, 251, 0.9);
     }
 
