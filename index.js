@@ -10,6 +10,8 @@ const prevButtonFeed = document.querySelector(".js-feedback-btn-left");
 const nextButtonFeed = document.querySelector(".js-feedback-btn-right");
 const slideRowFeed = document.querySelector(".js-line_sl");
 
+const width = getComputedStyle(document.body).width;
+console.log(width)
 
 
 
@@ -87,12 +89,22 @@ function onPrevBtnFeedClick(){
 function onNextBtnFeedClick() {
         translation += (parseInt(feedbackElem.width)+16);
     slideRowFeed.style.transform = `translateX(-${translation}px)`
-    if (translation > (slideRowFeed.children.length-4) * parseInt(feedbackElem.width)) {
+    if (parseInt(width) < 768) {
+         if (translation > (slideRowFeed.children.length-1) * parseInt(feedbackElem.width) ) {
         nextButtonFeed.disabled = true
     } 
     if (translation < slideRowFeed.clientWidth && translation !== 0) {
           prevButtonFeed.disabled = false
     }
+    } else {
+               if (translation > (slideRowFeed.children.length-4) * parseInt(feedbackElem.width) ) {
+        nextButtonFeed.disabled = true
+    } 
+    if (translation < slideRowFeed.clientWidth && translation !== 0) {
+          prevButtonFeed.disabled = false
+    }  
+   }
+  
 }
 
 
