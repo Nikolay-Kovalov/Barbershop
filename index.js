@@ -6,10 +6,9 @@ const modalCloseBtn = document.querySelector(".close_btn");
 const prevButton = document.querySelector(".portfolio_btn_prev");
 const nextButton = document.querySelector(".portfolio_btn_next");
 const slideRow = document.querySelector(".line_sl");
-const option = document.querySelector(".select_specialist");
-
-
-
+const prevButtonFeed = document.querySelector(".js-feedback-btn-left");
+const nextButtonFeed = document.querySelector(".js-feedback-btn-right");
+const slideRowFeed = document.querySelector(".js-line_sl");
 
 
 
@@ -23,7 +22,11 @@ document.addEventListener('keydown', onEscClick);
 modalCloseBtn.addEventListener('click', onCloseBtnClick);
 prevButton.addEventListener('click', onPrevBtnClick);
 nextButton.addEventListener('click', onNextBtnClick);
-option.addEventListener('mouseover', onMouseoverOption)
+
+prevButtonFeed.addEventListener('click', onPrevBtnFeedClick);
+nextButtonFeed.addEventListener('click', onNextBtnFeedClick);
+
+
 
 
 
@@ -60,6 +63,38 @@ function onCloseBtnClick() {
         modal.classList.add('hidden');
         document.body.classList.remove('backdrop_active') 
 }
+
+
+let feedbackTranslation = 0;
+
+const feedbackElem = getComputedStyle(slideRowFeed.firstElementChild);
+
+
+function onPrevBtnFeedClick(){
+        if (translation < slideRowFeed.clientWidth) {
+                translation -= (parseInt(feedbackElem.width)+16);
+    slideRowFeed.style.transform = `translateX(-${translation}px)`  
+    }
+    if (translation < slideRowFeed.clientWidth && translation !== 0) {
+        nextButtonFeed.disabled = false
+    } 
+        if (translation === 0) {
+        prevButtonFeed.disabled = true
+   
+    }
+}
+
+function onNextBtnFeedClick() {
+        translation += (parseInt(feedbackElem.width)+16);
+    slideRowFeed.style.transform = `translateX(-${translation}px)`
+    if (translation > (slideRowFeed.children.length-4) * parseInt(feedbackElem.width)) {
+        nextButtonFeed.disabled = true
+    } 
+    if (translation < slideRowFeed.clientWidth && translation !== 0) {
+          prevButtonFeed.disabled = false
+    }
+}
+
 
 
 
@@ -127,15 +162,13 @@ function onPrevBtnClick() {
 }
 
 
-function onMouseoverOption(evt) {
-    if (evt.target.classList.contains("option")) {
-         console.log("mouseover")
-    }
-    // evt.target.classList.add(".white")
-   
-}
 
-console.log((2).toString(16))
+// const s = 'Привет мир'
 
+// let k = -1;
+
+// while ((k = s.indexOf('и', k+1))>=0)
+
+//     console.log(k)
 
 

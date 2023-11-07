@@ -4,7 +4,7 @@ const mobMenuBtn = document.querySelector(".mob-menu-btn");
 const mobMenu = document.querySelector(".mobile_menu");
 const backdrop = document.querySelector(".backdrop-mob");
 const navList = document.querySelector(".navigation_list")
-console.log(navList)
+
 
 backdrop.addEventListener('click', onBackdropClickMob);
 mobMenuBtn.addEventListener('click', onMobMenuBtnClick);
