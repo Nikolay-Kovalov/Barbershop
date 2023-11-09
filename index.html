@@ -312,8 +312,12 @@
           <h2 class="portfolio_title">Портфоліо</h2>
           <div class="slide_container">
             <ul class="line_sl">
-              <li class="portfolio_item">
-                <img src="./images/portfolio_1.jpg" alt="" class="item" />
+              <li class="item">
+                <img
+                  src="./images/portfolio_1.jpg"
+                  alt=""
+                  class="portfolio_img"
+                />
               </li>
               <li class="item">
                 <img
@@ -329,8 +333,12 @@
                   class="portfolio_img"
                 />
               </li>
-              <li class="portfolio_item">
-                <img src="./images/portfolio_4.jpg" alt="" class="item" />
+              <li class="item">
+                <img
+                  src="./images/portfolio_4.jpg"
+                  alt=""
+                  class="portfolio_img"
+                />
               </li>
               <li class="item">
                 <img
@@ -346,8 +354,12 @@
                   class="portfolio_img"
                 />
               </li>
-              <li class="portfolio_item">
-                <img src="./images/portfolio_7.jpg" alt="" class="item" />
+              <li class="item">
+                <img
+                  src="./images/portfolio_7.jpg"
+                  alt=""
+                  class="portfolio_img"
+                />
               </li>
               <li class="item">
                 <img
@@ -381,7 +393,7 @@
       <section class="feedback_section" id="feedback">
         <div class="container">
           <h2 class="feedback_title">Відгуки</h2>
-          <div class="slide_container">
+          <div class="slide_container_feed">
             <ul class="feedback_list js-line_sl">
               <li class="feedback_list_item">
                 <div class="feedback_square">
@@ -779,8 +791,8 @@
     <footer class="footer">
       <div class="container">
         <div class="footer_wrapper">
-          <div class="footer_contacts_wrapper">
-            <a href="./" class="logo">Scissors</a>
+          <a href="./" class="logo">Scissors</a>
+          <div class="address_menu_wrapper">
             <div class="address_wrapper">
               <h2 class="address_title">Наша адреса:</h2>
               <address class="address">
@@ -809,63 +821,6 @@
                 </ul>
               </address>
             </div>
-            <h2 class="footer_social_title">Ми у соц. мережах:</h2>
-            <ul class="footer_social_list">
-              <li class="footer_social_list_item">
-                <a
-                  href="https://www.facebook.com"
-                  class="footer_social_list_link"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  aria-label="facebook icon"
-                >
-                  <svg class="icon">
-                    <use href="./images/icons.svg#icon-Facebook"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer_social_list_item">
-                <a
-                  href="https://twitter.com"
-                  class="footer_social_list_link"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  aria-label="twitter icon"
-                >
-                  <svg class="icon twit">
-                    <use href="./images/icons.svg#icon-Twitter"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer_social_list_item">
-                <a
-                  href="https://www.instagram.com"
-                  class="footer_social_list_link"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  aria-label="instagram icon"
-                >
-                  <svg class="icon inst">
-                    <use href="./images/icons.svg#icon-Instagram"></use>
-                  </svg>
-                </a>
-              </li>
-              <li class="footer_social_list_item">
-                <a
-                  href="https://www.linkedin.com"
-                  class="footer_social_list_link"
-                  target="_blank"
-                  rel="noopener nofollow noreferrer"
-                  aria-label="linkedin icon"
-                >
-                  <svg class="icon linked">
-                    <use href="./images/icons.svg#icon-Linkedin"></use>
-                  </svg>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="footer_nav_form_wrapper">
             <nav class="navigation_footer footer_nav">
               <ul class="navigation_list_footer">
                 <li class="navigation_list_item_footer">
@@ -919,10 +874,71 @@
                 </li>
               </ul>
             </nav>
-            <p class="promotion_footer">Акції та події:</p>
-            <div class="footer_input_wrapper">
-              <input type="text" placeholder="Email" class="footer_input" />
-              <button class="footer_btn">Підписатись</button>
+          </div>
+          <div class="footer_social_wrapper">
+            <div class="social_wrapper">
+              <h2 class="footer_social_title">Ми у соц. мережах:</h2>
+              <ul class="footer_social_list">
+                <li class="footer_social_list_item">
+                  <a
+                    href="https://www.facebook.com"
+                    class="footer_social_list_link"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    aria-label="facebook icon"
+                  >
+                    <svg class="icon">
+                      <use href="./images/icons.svg#icon-Facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer_social_list_item">
+                  <a
+                    href="https://twitter.com"
+                    class="footer_social_list_link"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    aria-label="twitter icon"
+                  >
+                    <svg class="icon twit">
+                      <use href="./images/icons.svg#icon-Twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer_social_list_item">
+                  <a
+                    href="https://www.instagram.com"
+                    class="footer_social_list_link"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    aria-label="instagram icon"
+                  >
+                    <svg class="icon inst">
+                      <use href="./images/icons.svg#icon-Instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="footer_social_list_item">
+                  <a
+                    href="https://www.linkedin.com"
+                    class="footer_social_list_link"
+                    target="_blank"
+                    rel="noopener nofollow noreferrer"
+                    aria-label="linkedin icon"
+                  >
+                    <svg class="icon linked">
+                      <use href="./images/icons.svg#icon-Linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="promotion_wrapper">
+              <p class="promotion_footer">Акції та події:</p>
+              <div class="footer_input_wrapper">
+                <input type="text" placeholder="Email" class="footer_input" />
+                <button class="footer_btn">Підписатись</button>
+              </div>
             </div>
           </div>
         </div>

@@ -184,3 +184,12 @@ function onPrevBtnClick() {
 //     console.log(k)
 
 
+
+
+
+// Array.prototype.map = function map() {
+//     console.log("map")
+// }
+
+
+
